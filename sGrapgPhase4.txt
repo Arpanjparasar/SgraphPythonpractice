@@ -1,0 +1,107 @@
+'''Write a script to enter the name and year of birth . calculate the
+age and store in a list'''
+
+foo=[]
+Name=input('Enter your name')
+Yob=int(input('Enter the year of birth'))
+age=2018-Yob
+foo=[Name,Yob,age]
+print(foo)
+
+############################################################################
+a=int(input('Enter the first number'))
+b=int(input('Enter the second Number'))
+op=input('Enter the operation(+,-,/,*)')
+
+if (op == '+'):
+    print('The sum is :',a+b)
+elif(op == '-'):
+    print('The difference is :',a-b)
+else:
+    print('Please enter a valid operation')
+
+###########################################################################
+foo=[1,2,3,4,'Bangalore','Mumbai',22,33]
+fooInt=[]
+fooStr=[]
+
+for i in foo:
+    if(type(i) == type(1)):
+        fooInt.append(i)
+    else:
+        fooStr.append(i)
+print(fooInt)
+print(fooStr)
+
+##############################################################
+#While loop while(COndition)
+
+a=30
+while(a > 20):
+    print('Hi')
+    a=a-1
+    print('A is :',a)
+else:
+    print('No')
+
+#######################################################
+foo=[2,3,4,5]
+def sqaure(x):
+    return x*x
+
+
+
+for i in foo:
+    print(sqaure(i))
+
+##############################################
+def square(x):
+    return x*x
+
+def cube(f,y):
+    print('Square is :',f(y))
+    print('Cube is ',y*y*y)
+
+
+cube(square,2)
+
+#############################################
+def para(f):
+    print('<p>')
+    f()
+    print('</p>')
+@para
+def headline1():
+    print('TODAYS HEADLINE')
+@para
+def headline2():
+    print('YESTERDAYS HEADLINE')
+@para
+def headline3():
+    print('MODI HEADLINE')
+
+#########################################
+import time
+t1=time.clock()
+for i in range(10000):
+    pass
+t2=time.clock()
+
+print(t2-t1)
+#######################################################3
+def check(f):
+    def validate(a):
+        if(a == 0):
+            print('Cannot divide by zero')
+        else:
+            f(a)
+    return validate
+
+@check
+def divide(x):
+    print(1/x)
+
+foo=[1,2,3,4,5,0]
+
+for i in foo:
+    divide(i)
