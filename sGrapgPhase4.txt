@@ -66,6 +66,8 @@ def cube(f,y):
 cube(square,2)
 
 #############################################
+'''use of decorator '''
+
 def para(f):
     print('<p>')
     f()
@@ -80,7 +82,10 @@ def headline2():
 def headline3():
     print('MODI HEADLINE')
 
-#########################################
+#################################################
+'''program to find out the execution time of a program'''
+
+
 import time
 t1=time.clock()
 for i in range(10000):
@@ -88,7 +93,10 @@ for i in range(10000):
 t2=time.clock()
 
 print(t2-t1)
-#######################################################3
+#######################################################
+'''use of decorator and wrapper function'''
+
+
 def check(f):
     def validate(a):
         if(a == 0):

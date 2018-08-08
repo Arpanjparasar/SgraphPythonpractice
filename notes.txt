@@ -1,0 +1,1 @@
+In build libraries: these are small programs by python interpreter used to perform specific task example: import <name>
