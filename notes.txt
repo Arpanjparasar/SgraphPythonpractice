@@ -1,1 +1,7 @@
 In build libraries: these are small programs by python interpreter used to perform specific task example: import <name>
+
+File handling: It is the process of manipulation of file using the metadata from the interpreter:
+STEPS:
+1. Getting the metadata
+2. Performing the operation
+3. Closing
