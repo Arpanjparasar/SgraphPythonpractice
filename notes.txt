@@ -5,3 +5,16 @@ STEPS:
 1. Getting the metadata
 2. Performing the operation
 3. Closing
+
+Three modes of file handling
+1. Read 
+		Read()  --> The entire content of the file into a string
+		ReadLine() --> This will give the first line
+		Readlines() --> this will put the file into a list
+2. Write
+3. Append
+
+Q1) Write a script to perform square and cube of a list and store it ito two different files(square.txt, cube.txt)
+
+Constructor: It is a special member function used to initialize a member variable 
+This function is called whenever an object is created
