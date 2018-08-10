@@ -18,3 +18,9 @@ Q1) Write a script to perform square and cube of a list and store it ito two dif
 
 Constructor: It is a special member function used to initialize a member variable 
 This function is called whenever an object is created
+
+Encapsulation: It is the process of binding the member variable to a fix object
+
+Polymorphism: IT is a concept in OOPs which helps in calling different member functions from common object
+
+Inheritance: It is a concept by which we can use the member function and member variable of the inherited class.
