@@ -187,3 +187,60 @@ class emp:
 name=input('Enter the name')
 obj = emp(name)
 obj.display()
+obj.display()
+#############################ENCAPTULATION#################
+class panda:
+    def __init__(self,name):
+        self.__name=name
+
+    def display(self):
+        print('Name is :',self.__name)
+
+obj = panda('Alex')
+obj.__name='Lexi'
+obj.display()
+#####################################POLYMORPHISM#################
+class panda:
+    def move(self):
+        print('Pandas are really slow')
+
+class human:
+    def move(self):
+        print('Humans can walk and run')
+
+def callMove(obj):
+    obj.move()
+
+pa = panda()
+hu = human()
+callMove(hu)
+###############################################3
+class grandPapa:
+    def __init__(self,name):
+        self.name=name
+
+class papa(grandPapa):
+    def display(self):
+        print('Name is :',self.name)
+
+obj =papa('Panda')
+obj.display()
+#######################################SUPER FUCNTION################
+class emp:
+    def __init__(self,name):
+        self.name=name
+        self.email=self.name+'@email.com'
+
+class developer(emp):
+    def __init__(self,name,language):
+        super().__init__(name)
+        self.language=language
+
+    def display(self):
+        print('Name :',self.name)
+        print('Email :',self.email)
+        print('Language:',self.language)
+
+obj = developer('Alex','Java')
+obj.display()
+
