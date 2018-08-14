@@ -244,3 +244,28 @@ class developer(emp):
 obj = developer('Alex','Java')
 obj.display()
 
+##############################################
+import time
+import threading
+def square(x):
+    print('SQUARE PRINTING----')
+    for i in x:
+        time.sleep(0.2)
+        print('square:',i*i)
+
+def cube(x):
+    print('CUBE PRINTING----')
+    for i in x:
+        time.sleep(0.2)
+        print('cube:',i*i*i)
+
+t=time.time()
+foo=[2,3,4,44,66,5]
+t1=threading.Thread(target=square,args=(foo,))
+t2=threading.Thread(target=cube,args=(foo,))
+
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+print('DONE IN',time.time()-t)

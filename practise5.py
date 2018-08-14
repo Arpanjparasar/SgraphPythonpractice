@@ -24,7 +24,17 @@ class second(passenger):
         print('PNR number is :', self.pnr)
         print('Meals are not free')
 
+def callObj(obj):
+    obj.display()
+
 name=input('Enter the name')
 contact=input('Enter the contact no')
-obj = passenger(name,contact)
-obj.display()
+bclass=input('Enter the class(first/second)')
+fc=first(name,contact)
+sc=first(name,contact)
+if(bclass=='first'):
+    callObj(fc)
+elif(bclass=='second'):
+    callObj(sc)
+else:
+    print('Enter valid class')
