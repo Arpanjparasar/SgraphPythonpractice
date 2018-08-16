@@ -29,3 +29,20 @@ Abstraction: It is aconcept which binds the class to the Interpreter and not the
 
 Q) Create a class ask the user to enter 5 names store them into list 
 , create random email , put them to file into thread 
+
+JSON- Java Script object notation: It is a form of sharing data between two applications in keys and values.
+
+json.dumps() : This is use to convert a json object into a string.
+
+json.loads(str): This is use to conver the json string object into a dictionary
+
+		str parameter has to be a string.
+
+
+web application:
+step 1: Import the flask module
+step 2: make the app run for the home page.
+(this is just to test for flask server)
+step 3: Create a folder templates inside the same project folder.
+Put the html file inside the templates folder
+step 4: Import render_template and run the app 

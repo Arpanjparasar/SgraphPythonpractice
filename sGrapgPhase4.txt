@@ -269,3 +269,71 @@ t2.start()
 t1.join()
 t2.join()
 print('DONE IN',time.time()-t)
+######################################################3
+foo={}
+foo['Alex']={'location':'Bangalore','skill':'Java'}
+foo['Breet']={'location':'Mumbai','skill':'SAP'}
+print(foo['Alex']['skill'])
+#########################################
+import json
+foo={}
+foo['Alex']={'location':'Bangalore','skill':'Java'}
+foo['Breet']={'location':'Mumbai','skill':'SAP'}
+
+json_str=json.dumps(foo)
+json_dict=json.loads(json_str)
+print(json_dict['Alex'].keys())
+#######################################################
+import requests
+import json
+
+foo = requests.get(url='')
+json_news=foo.json()
+
+json_obj=json.dumps(json_news)
+json_dict=json.loads(json_obj)
+print(json_dict['articles'][5]['title'])
+print(json_dict['articles'][5]['description'])
+######################################################3
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'HI! i am in a browser'
+
+if (__name__ == "__main__"):
+    app.run()
+#########################################
+##################################################################
+
+HTML
+###################
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NAME</title>
+  </head>
+  <body>
+        <h1>Name is :{{ name }}</h1>
+        <h1>Email is : {{ email }}</h1>
+  </body>
+</html>
+####################################33
+from flask import Flask,render_template
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    name='Alex'
+    email='something@email.com'
+    return render_template('index.html',name=name,email=email)
+
+@app.route('/headlines')
+def hi():
+    return render_template('imdex1.html')
+
+
+if (__name__ == "__main__"):
+    app.run(debug=True)
