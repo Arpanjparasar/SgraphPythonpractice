@@ -287,7 +287,7 @@ print(json_dict['Alex'].keys())
 import requests
 import json
 
-foo = requests.get(url='')
+foo = requests.get(url='https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=132c562158c648fabf3e9ca22e64d635')
 json_news=foo.json()
 
 json_obj=json.dumps(json_news)
