@@ -46,3 +46,7 @@ step 2: make the app run for the home page.
 step 3: Create a folder templates inside the same project folder.
 Put the html file inside the templates folder
 step 4: Import render_template and run the app 
+
+
+
+
