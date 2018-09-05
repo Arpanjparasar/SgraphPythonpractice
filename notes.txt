@@ -25,7 +25,7 @@ Polymorphism: IT is a concept in OOPs which helps in calling different member fu
 
 Inheritance: It is a concept by which we can use the member function and member variable of the inherited class.
 
-Abstraction: It is aconcept which binds the class to the Interpreter and not the object. This makes the class only Inheritable.
+Abstraction: It is aconcept which binds the class to the Interpreter and not the object. This makes the class only Inheritable. ORvThis is a process by whih a class is restricted from object this makes a class inherritable this process is called abstraction
 
 Q) Create a class ask the user to enter 5 names store them into list 
 , create random email , put them to file into thread 
@@ -47,6 +47,6 @@ step 3: Create a folder templates inside the same project folder.
 Put the html file inside the templates folder
 step 4: Import render_template and run the app 
 
-
+Multithreading: It sis a method of utilizing the processing poer in and efficient way by dividing them into threads
 
 
