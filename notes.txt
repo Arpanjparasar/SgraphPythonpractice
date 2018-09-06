@@ -49,4 +49,17 @@ step 4: Import render_template and run the app
 
 Multithreading: It sis a method of utilizing the processing poer in and efficient way by dividing them into threads
 
+Flask: Flask is a web framework. This means flask provides you with tools, libraries and technologies that allow you to build a web application.
+
+DB
+1. Table:
+These are the  primary source to access the data inside a database
+ a) CREATE TABLE <table name> Create a table in DB
+b) DROP TABLE <tablename> This will delete a table in DB
+
+DML: Data Modification language: These are the statements used to add, delete, update or delete the data in a table.
+1.Insert
+2.update
+3.delete
+4.select
 

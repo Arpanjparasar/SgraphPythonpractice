@@ -1,0 +1,489 @@
+
+#################CALCULATOR#############################33
+
+
+first=int(input('Enter the first number'))
+second=int(input('Enter the second number'))
+operand=input('Enter the operation(+,-,/,*)')
+
+if (operand == '+'):
+    print('The sum is :',first+second)
+elif(operand == '-'):
+    print('The difference is :',first-second)
+elif(operand == '*'):
+    print('The product is :',first*second)
+else:
+    print('Please enter a valid operation')
+####################################LOOPS#######################
+foo=[1,2,3,4,5,'Bangalore','Mumbai',23,44]
+fooInt=[]
+fooStr=[]
+
+for i in foo:
+    if(type(i) == type(1)):
+        fooInt.append(i)
+    else:
+        fooStr.append(i)
+
+print(fooInt)
+print(fooStr)
+
+###################################################
+r=int(input('Enter the range'))
+a=0
+b=1
+for i in range(r):
+    c=a+b
+    print(c)
+    a=b
+    b=c
+
+	######################################################
+for i in range(5):
+    for j in range(i):
+        print('*',end='')
+    print('\n')
+
+	################################################
+	name=input('Enter the name')
+yearOfBirth=input('Enter the year you are born')
+print(name)
+age=2018-int(yearOfBirth)
+print(age)
+####################################################333
+def age(name,yob):
+    age1=2018-yob
+    print('Name is :',name)
+    print('Age is :',age1)
+
+name=input('Enter the name ')
+yob=int(input('Enter the year of birth'))
+age(name,yob)
+###########################################################
+SQUARE and CUBE
+##################################
+def square(x):
+    return x*x
+def cube(y):
+    return y*y*y
+
+foo=[2,3,4,5,6]
+fooSquare=[]
+fooCube=[]
+
+for i in foo:
+    fooCube.append(cube(i))
+    fooSquare.append(square(i))
+
+print(fooSquare)
+print(fooCube)
+
+#############################DICT############################33
+foo={'Name':'Breet','Location':'Mumbai'}
+# print(foo)
+# print(foo.keys())
+# print(foo.values())
+print(foo['Name'])
+foo['Address']='Sea'
+print(foo)
+############################################################333
+foo={'Name':'Breet','Location':'Mumbai'}
+for i in foo.items():
+    print(i)
+################################################333
+name=[]
+
+for i in range(5):
+    a = input('Enter the Name')
+    name.append(a)
+print(name)
+######################################
+def common(f):
+    print('This is headLine--------')
+    f()
+    print('This is ending---------')
+
+def article():
+    print('This is main NEWS')
+def article1():
+    print('This is main NEWS')
+
+common(article1)
+###########################################3
+def square(x):
+    return x*x
+def map_list(func,lit,lit_square):
+    for i in lit:
+        x=func(i)
+        foo_square.append(x)
+    return foo_square
+
+
+foo=[1,2,3,4,5]
+foo_square=[]
+square_list=map_list(square,foo,foo_square)
+print(square_list)
+###############################################
+def foo(x,y=8):
+    print(y)
+foo(2,'pwd')
+'''It a concept to define a default argument in a function parameter'''
+
+################################################
+import time
+
+t1=time.time()
+for i in range(10000000):
+    pass
+t2=time.time()
+print('Hi',t2-t1)
+#############################################3
+import time
+def time_taken(f):
+    t1=time.time()
+    f()
+    t2=time.time()
+    print('Time taken by function is :',t2-t1)
+def x():
+    for i in range(10):
+        time.sleep(0.2)
+
+time_taken(x)
+####################################################3
+import sys
+foo=[6,5,4,0,7,'pwd']
+for i in foo:
+    try:
+        r=1/i
+        print(r)
+    except:
+        print('Error',sys.exc_info()[1])
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+foo={'name':'','age':0}
+name=input('Enter the name ')
+age=input('Enter the age')
+foo['name']=name
+foo['age']=age
+print(foo)
+###############################################333
+import time
+def common(f):
+    t1=time.time()
+    f()
+    t2=time.time()
+    print('Time taken is :',t2-t1)
+
+@common
+def article():
+    print('This is todays NEWS')
+@common
+def article1():
+    for i in range(100000):
+        pass
+    print('This is todays NEWS')
+article
+article1
+###################################################
+def common(f):
+    t1=
+    f()
+    t2=
+
+@common
+def square(x):
+    return x*x
+
+def cube(y):
+    return y*y*y
+
+foo=[23,45,6,5,776666,77756456,456456456]
+foo_square=[]
+foo_cube=[]
+for i in foo:
+    foo_square.append(square(i))
+    foo_cube.append(cube(i))
+
+###############################################################3
+m=open(r'C:\Users\Parth\PycharmProjects\classes\bangalore.txt','r')
+foo=m.readlines()
+m.close()
+
+for i in foo:
+    print(i)
+###############################################################
+name=input('Enter the name ')
+m=open(r'C:\Users\Parth\PycharmProjects\classes\Mumbai.txt','r')
+m.write('\n')
+m.write(name)
+
+m.close()
+##################################################################
+def write_File(name,age,email,path):
+    cur = open(path,'w')
+    cur.write(name)
+    cur.write('\n')
+    cur.write(age)
+    cur.write('\n')
+    cur.write(email)
+    cur.close()
+
+name=input('Enter the name')
+age=input('Enter the age')
+email=input('Enter the email')
+path=r'C:\Users\Parth\PycharmProjects\classes\studentDetails.txt'
+write_File(name,age,email,path)
+
+#########################################
+def write_file(name_list,path):
+    cur=open(path,'w')
+    for i in name_list:
+        cur.write(i)
+        cur.write('\n')
+    cur.close()
+def file_search():
+    name_search = input('Please enter the name to search')
+    return "No"
+
+name_list=[]
+for i in range(3):
+    name=input('Enter the name')
+    name_list.append(name)
+path=r'C:\Users\Parth\PycharmProjects\classes\studentDetails.txt'
+write_file(name_list,path)
+file_search()
+######################################################3
+path=r'C:\Users\Parth\PycharmProjects\classes\studentDetails.txt'
+cur = open(path,'r')
+#String format
+z=cur.read()
+#First line of the file
+x=cur.readline()
+#The content of the file in a list format
+y=cur.readlines()
+
+cur.close()
+print(x)
+print(y)
+print(z)
+##############################################################
+path=r'C:\Users\Parth\PycharmProjects\classes\studentDetails.txt'
+cur = open(path,'a')
+cur.write('\n')
+cur.write('Address')
+cur.close()
+#############################################################
+class human:
+    def hand(self):
+        print('I am Hand')
+    def legs(self):
+        print('I am leg')
+    def display(self):
+        print('Name is :',self.name)
+
+obj = human()
+obj.name='Alex'
+obj.hand()
+obj.legs()
+obj.display()
+############################################################33
+class human:
+    def __init__(self,name,age,location):
+        self.name=name
+        self.age=age
+        self.location=location
+        print('Hi is a m being called')
+    def display(self):
+        print('Name is :',self.name)
+        print('Age is :',self.age)
+        print('Location is :',self.location)
+
+obj = human('Cat',21,'Delhi')
+#############################################################
+class human:
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print('Name is :',self.name)
+
+name=input('Enter the name')
+obj = human(name)
+obj.display()
+#################################ENCAPTULATION######################3
+class human:
+    def __init__(self,name):
+        self.__name=name
+
+    def display(self):
+        print('Name is :',self.__name)
+
+obj = human('Breet')
+obj.__name='ALex'
+obj.display()
+##################################
+class bangalore:
+    def traffic(self):
+        print('Traffic in Bangalore is more')
+    def police(self):
+        print('Police in Bangalore are good')
+
+class Mumbai:
+    def traffic(self):
+        print('Traffic in Mumbai is more')
+    def police(self):
+        print('Police in Mumbai are good')
+
+def callObj(obj):
+    obj.traffic()
+    obj.police()
+
+mumb = Mumbai()
+ban = bangalore()
+callObj(ban)
+###################################
+class foo:
+    def __init__(self,a):
+        self.a=a
+
+    def disp(self):
+        print(self.a)
+
+def callObj(obj):
+    obj.disp()
+ko = foo('Lion')
+callObj(ko)
+####################################INHERITANCE###########################
+class parent:
+    def root(self):
+        print('This is root function')
+
+class child(parent):
+    def chilFun(self):
+        print('This is a child class')
+obj = child()
+obj.chilFun()
+obj.root()
+#####################################MULTITHREADING###############################################
+import time
+import threading
+def square(x):
+    print('----PRINTING SQUARE-----')
+    for i in x:
+        time.sleep(0.2)
+        print(i*i,end=' ')
+    print('\n')
+def cube(y):
+    print('----PRINTING CUBE-----')
+    for i in y:
+        time.sleep(0.2)
+        print(i*i*i,end=' ')
+t1=time.time()
+foo=[1,2,3,5,6]
+p1=threading.Thread(target=square,args=(foo,))
+p2=threading.Thread(target=cube,args=(foo,))
+p1.start()
+p2.start()
+p1.join()
+p2.join()
+t2=time.time()
+print('Time taken is :',t2-t1)
+###############################################
+import time
+def foo():
+    for i in range(10000000):
+        pass
+
+def foo1():
+    for i in range(20000000):
+        pass
+t1=time.time()
+foo()
+foo1()
+t2=time.time()
+print('Time taken is :',t2-t1)
+############################################3
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Hi this is my webSite'
+@app.route('/module2')
+def india():
+    return 'This is 2 module'
+
+if __name__ == '__main__':
+    app.run()
+##########################################333
+import requests
+import json
+urls=''
+
+get_data = requests.get(url=urls)
+get_json=get_data.json()
+get_dump = json.dumps(get_json)
+
+get_loads=json.loads(get_dump)
+for i in range(5):
+    print(get_loads['articles'][i]['title'])
+    print('\n')
+    print(get_loads['articles'][i]['description'])
+#######################################################3
+foo='I am a good person and a good man'
+foo_dict={}
+x=foo.split()
+for i in x:
+    foo_dict[i]=foo.count(i)
+
+print(foo_dict)
+###############################DATABASE OPERATIONS#################################
+import sqlite3
+
+conn = sqlite3.connect('dataBase/demoSQL.db')
+print('-----Connected to DB-------')
+
+drop='DROP TABLE EMP'
+conn.execute(drop)
+
+CreateTable='CREATE TABLE EMP (id int,NAME text,DEP text)'
+conn.execute(CreateTable)
+print('---------Table created---------')
+
+insrt="INSERT INTO EMP VALUES(1,'Alex','pwd')"
+conn.execute(insrt)
+
+slt="select * from emp"
+x=conn.execute(slt)
+
+for i in x:
+    print(i)
+
+conn.close()
+############################################
+import sqlite3
+
+conn = sqlite3.connect('dataBase/demoSQL.db')
+print('-----Connected to DB-------')
+
+drop='DROP TABLE EMP'
+conn.execute(drop)
+
+CreateTable='CREATE TABLE EMP (id int,NAME text,DEP text)'
+conn.execute(CreateTable)
+print('---------Table created---------')
+
+insrt="INSERT INTO EMP VALUES(1,'Alex','pwd')"
+insrt1="INSERT INTO EMP VALUES(2,'Nigel','BMC')"
+insrt3="INSERT INTO EMP VALUES(3,'Bret','Electricity')"
+conn.execute(insrt)
+conn.execute(insrt1)
+conn.execute(insrt3)
+
+slt="select * from emp"
+x=conn.execute(slt)
+
+for i in x:
+    print(i)
+
+conn.close()
