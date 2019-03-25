@@ -18,7 +18,7 @@ class DBConnect:
     def ListTickets(self):
         cursor=self._db.execute("select * from Ticket")
         return cursor
-
+run
     def DeleteRecord(self,ID):
         self._db.row_factory=sqlite3.Row
         # Add records

@@ -11,7 +11,7 @@ def hello():
     return HttpResponse('Hi')
 def index(request):
     newsApi = requests.get(
-        url='https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=132c562158c648fabf3e9ca22e64d635')
+        url='https://newsapi.org/v2/everything?q=apple&from=2019-03-24&to=2019-03-24&sortBy=popularity&apiKey=132c562158c648fabf3e9ca22e64d635')
     dump = newsApi.json()
     # dumps the json object into an element
     json_str = json.dumps(dump)
